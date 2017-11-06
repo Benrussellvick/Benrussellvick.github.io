@@ -1794,7 +1794,7 @@ a i {
 .nav ul li {
   display: inline-block;
   position: relative;
-  line-height: 66px;
+  padding: 0 10px;
 }
 
 .nav ul li.logo {
@@ -1805,11 +1805,19 @@ a i {
   font-size: 60px;
 }
 
-.nav ul li.logo:hover:before {
+.nav ul li.logo a:hover:before {
   display: none;
 }
 
-.nav ul li:before {
+.nav ul li a {
+  padding: 12px 10px;
+  display: block;
+  color: black;
+  position: relative;
+  text-align: center;
+}
+
+.nav ul li a:before {
   display: block;
   content: '';
   position: absolute;
@@ -1817,9 +1825,10 @@ a i {
   height: 2px;
   width: 0;
   transition: 0.3s width;
+  left: 0;
 }
 
-.nav ul li:hover:before {
+.nav ul li a:hover:before {
   display: block;
   content: '';
   position: absolute;
@@ -1827,13 +1836,6 @@ a i {
   height: 2px;
   background: #444;
   width: 100%;
-}
-
-.nav ul li a {
-  padding: 10px 20px;
-  display: block;
-  color: black;
-  position: relative;
 }
 
 .about-me .fp-tableCell .intro {
@@ -1891,6 +1893,49 @@ a i {
 
 .fp-tableCell {
   padding: 0 40px;
+}
+
+.logo-list {
+  width: 100%;
+  opacity: 0.2;
+  position: absolute;
+  top: -14vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 14vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.logo-list li {
+  width: 15%;
+  max-width: 158px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo-list li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+}
+
+.logo-list li a img {
+  width: 100%;
+  float: left;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 /*# sourceMappingURL=main.css.map */
