@@ -1206,6 +1206,8 @@ html.fp-enabled,
 .slick-slider {
   width: 100%;
   height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .slide-item {
@@ -1753,8 +1755,13 @@ html.fp-enabled,
   height: auto !important;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   color: #444;
+  overflow-x: hidden;
 }
 
 h1 {
