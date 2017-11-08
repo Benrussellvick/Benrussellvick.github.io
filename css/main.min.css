@@ -1227,6 +1227,15 @@ html.fp-enabled,
   position: absolute;
 }
 
+.slide-item .bg-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 2;
+  width: 100%;
+}
+
 .slide-item .slide-desc {
   position: absolute;
   left: 40px;
@@ -1266,6 +1275,11 @@ html.fp-enabled,
   transition: all 5s ease-out;
   transition-delay: 0.5s;
   opacity: 1;
+}
+
+.slide-item.slide-number-premier.slick-active img {
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
 }
 
 #slick-1 .slick-dots {
@@ -1875,6 +1889,37 @@ a i {
   text-align: justify;
   max-width: 900px;
   margin: 0 auto;
+}
+
+.about-me .fp-tableCell .intro .about-image {
+  display: inline-block;
+  border-radius: 100px;
+  overflow: hidden;
+  float: left;
+  margin-bottom: 15px;
+}
+
+.about-me .fp-tableCell .intro .about-image img {
+  height: 100px;
+  width: 100px;
+  float: left;
+}
+
+.about-me .fp-tableCell .intro .about-title {
+  display: inline-block;
+  float: left;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.about-me .fp-tableCell .intro .about-title h1 {
+  line-height: 100px;
+  margin: 0;
+}
+
+.about-me .fp-tableCell .intro p {
+  clear: both;
+  font-size: 14px;
 }
 
 .btn {
