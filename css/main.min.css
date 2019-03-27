@@ -1192,11 +1192,14 @@ html.fp-enabled,
   position: relative;
 }
 
-.hero .slide-item img {
-  width: auto;
-  height: auto;
-  min-width: 100%;
-  max-width: 120%;
+@media only screen and (max-width: 768px) {
+  .hero .slide-item img {
+    max-height: 100%;
+    -o-object-fit: fill;
+    object-fit: fill;
+    -o-object-position: center;
+    object-position: center;
+  }
 }
 
 .slick-slider-wrapper {
@@ -1212,7 +1215,7 @@ html.fp-enabled,
 
 .slide-item {
   width: 100%;
-  height: 86vh;
+  height: 100vh;
   display: inline-block;
   position: relative;
   padding-top: 15vh;
@@ -1230,12 +1233,13 @@ html.fp-enabled,
 
 .slide-item .bg-hero {
   position: absolute;
-  top: 0;
+  top: 120px;
+  bottom: 0;
   left: 0;
-  margin: 0 auto;
+  right: 0;
+  margin: auto;
   z-index: 2;
   width: 100%;
-  margin-top: 120px;
 }
 
 .slide-item .bg-hero img {
@@ -1820,7 +1824,7 @@ a i {
 
 .fp-viewing-home .nav {
   transition: all 0.4s;
-  background: rgba(255, 255, 255, 0.95);
+  background: white;
 }
 
 .fp-viewing-about .nav {
@@ -1830,7 +1834,7 @@ a i {
 
 .fp-viewing-contact .nav {
   transition: all 0.4s;
-  background: rgba(255, 255, 255, 0.95);
+  background: white;
 }
 
 .nav {
@@ -1993,30 +1997,29 @@ a i {
 
 .logo-list {
   width: 100%;
+  max-width: 900px;
   opacity: 0.6;
-  position: absolute;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
   height: 100%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
 
 .logo-list li {
-  width: 15%;
   max-width: 158px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 150px;
+  min-width: 150px;
+  float: left;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo-list li {
+    width: 15%;
+  }
 }
 
 .logo-list li a {
