@@ -1192,13 +1192,25 @@ html.fp-enabled,
   position: relative;
 }
 
+.hero .slide-item img {
+  width: auto;
+  -o-object-fit: fill;
+  object-fit: fill;
+  -o-object-position: center;
+  object-position: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero .slide-item img {
+    min-width: 100%;
+    max-width: 130%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .hero .slide-item img {
     max-height: 100%;
-    -o-object-fit: fill;
-    object-fit: fill;
-    -o-object-position: center;
-    object-position: center;
+    min-width: auto;
   }
 }
 
@@ -1879,13 +1891,19 @@ a i {
 }
 
 .nav ul li a {
-  padding: 12px 10px;
+  padding: 12px 5px;
   display: block;
   color: black;
   position: relative;
   text-align: center;
   float: left;
   top: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav ul li a {
+    padding: 12px 10px;
+  }
 }
 
 .nav ul li a:before {
