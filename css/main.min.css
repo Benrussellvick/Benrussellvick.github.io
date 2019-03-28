@@ -1844,6 +1844,17 @@ a i {
   background: rgba(255, 255, 255, 0.95);
 }
 
+.fp-viewing-work .nav {
+  transition: all 0.4s;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+@media only screen and (min-width: 768px) {
+  .fp-viewing-work .nav {
+    background: rgba(255, 255, 255, 0);
+  }
+}
+
 .fp-viewing-contact .nav {
   transition: all 0.4s;
   background: white;
@@ -1932,7 +1943,6 @@ a i {
 }
 
 .about-me .fp-tableCell .intro {
-  text-align: justify;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -1954,16 +1964,27 @@ a i {
 .about-me .fp-tableCell .intro .about-title {
   display: inline-block;
   float: left;
-  margin-left: 25px;
   margin-bottom: 15px;
 }
 
 .about-me .fp-tableCell .intro .about-title h1 {
-  line-height: 100px;
+  line-height: 50px;
   margin: 0;
+  text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-me .fp-tableCell .intro .about-title {
+    margin-left: 25px;
+  }
+
+  .about-me .fp-tableCell .intro .about-title h1 {
+    line-height: 100px;
+  }
 }
 
 .about-me .fp-tableCell .intro p {
+  text-align: justify;
   clear: both;
   font-size: 14px;
 }
@@ -2022,35 +2043,36 @@ a i {
 .logo-list {
   width: 100%;
   max-width: 900px;
-  opacity: 0.6;
   top: 0;
   height: 100%;
   right: 0;
   left: 0;
   margin: auto;
-}
-
-.logo-list li {
-  max-width: 158px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 150px;
-  min-width: 150px;
-  float: left;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-@media only screen and (min-width: 768px) {
-  .logo-list li {
-    width: 15%;
-  }
+.logo-list li {
+  max-width: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100px;
+  min-width: 120px;
+  float: left;
 }
 
 .logo-list li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px;
+  padding: 10px;
   -ms-flex-item-align: center;
   align-self: center;
 }
@@ -2061,6 +2083,22 @@ a i {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo-list li {
+    width: 15%;
+    max-width: 158px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 150px;
+    min-width: 170px;
+  }
+
+  .logo-list li a {
+    padding: 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
