@@ -3,11 +3,11 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="1000px" height="1000px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
-<rect x="233.1" y="393.36" fill="#65B2E9" width="91.222" height="91.222"/>
-<rect x="452.389" y="393.97" fill="#D2B1E0" width="91.221" height="91.222"/>
-<rect x="342.744" y="393.97" fill="#FF6D37" width="91.222" height="91.222"/>
-<rect x="562.034" y="393.36" fill="#EADA68" width="91.222" height="91.222"/>
-<rect x="671.678" y="393.36" fill="#9FACAB" width="91.223" height="91.222"/>
+<rect class="svg-blue" x="233.1" y="393.36" fill="#65B2E9" width="91.222" height="91.222"/>
+<rect class="svg-orange" x="452.389" y="393.97" fill="#D2B1E0" width="91.221" height="91.222"/>
+<rect class="svg-pink" x="342.744" y="393.97" fill="#FF6D37" width="91.222" height="91.222"/>
+<rect class="svg-yellow" x="562.034" y="393.36" fill="#EADA68" width="91.222" height="91.222"/>
+<rect class="svg-grey" x="671.678" y="393.36" fill="#9FACAB" width="91.223" height="91.222"/>
 <polygon fill="#666666" points="243.93,532.105 243.93,516.409 313.493,516.409 313.493,532.105 288.046,532.105 288.046,601.312 
 	269.376,601.312 269.376,532.105 "/>
 <g>
