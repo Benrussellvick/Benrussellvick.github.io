@@ -4,14 +4,6 @@ $(".logo svg").bind(
   "webkitAnimationEnd oanimationend msAnimationEnd animationend",
   function() {
     $(this).removeClass("logo-play");
-    // $(this)
-    //   .delay(1000)
-    //   .queue(function() {
-    //     // Wait for 1 second.
-    //     $(this)
-    //       .removeClass("logo-play")
-    //       .dequeue();
-    //   });
   }
 );
 
